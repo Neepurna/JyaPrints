@@ -1,0 +1,3 @@
+import { Palette,ScanLine,Shirt,Globe2 } from "lucide-react";import { AnimatedReveal } from "@/components/shared/AnimatedReveal";
+const features=[[Palette,"UNIQUE ART","Original artwork inspired by culture, myth & future."],[ScanLine,"PREMIUM PRINT","High quality DTG prints that last wash after wash."],[Shirt,"BUILT TO LAST","Oversized fit. 100% cotton. Made for everyday warriors."],[Globe2,"LIMITED DROPS","Small batches. No restocks. Get it or miss it."]];
+export function FeatureStrip(){return <AnimatedReveal><section className="feature-strip">{features.map(([Icon,t,d])=><div className="feature" key={String(t)}><Icon/><div><h3>{String(t)}</h3><p>{String(d)}</p></div></div>)}</section></AnimatedReveal>}

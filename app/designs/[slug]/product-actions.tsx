@@ -1,0 +1,2 @@
+"use client";import {useState} from "react";import {Product} from "@/types";import {useCart} from "@/lib/store/cart-store";
+export function ProductActions({product}:{product:Product}){const [size,setSize]=useState("M");const add=useCart(s=>s.add);return <div className="product-actions"><span>SELECT SIZE</span><div className="sizes">{["S","M","L","XL"].map(s=><button key={s} className={size===s?"active":""} onClick={()=>setSize(s)}>{s}</button>)}</div><button className="add-button" onClick={()=>add(product,size)}>ADD TO BAG <span>↗</span></button></div>}
