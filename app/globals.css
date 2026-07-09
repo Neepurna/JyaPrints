@@ -29,6 +29,8 @@ button:focus-visible,input:focus-visible,select:focus-visible { outline:2px soli
 .utility-copy--center b { font-size:1.1rem; letter-spacing:.03em; }
 .utility-copy--center span { font-size:.55rem; color:var(--gray); }
 .utility-badges { display:flex; align-items:center; gap:8px; }
+.utility-brand-mark { position:relative; width:126px; height:94px; opacity:.92; filter:drop-shadow(0 12px 26px rgba(0,0,0,.42)); }
+.utility-brand-mark img { object-fit:contain; }
 .poster-badge { border:1px solid var(--white); padding:7px 10px; min-height:34px; display:inline-grid; place-items:center; font:700 .6rem/1.05 var(--font-body); letter-spacing:.12em; text-align:center; }
 .poster-badge:first-child { border-radius:50%; min-width:54px; }
 .poster-badge--small { font-size:.5rem; min-height:28px; padding:5px 8px; }
@@ -118,6 +120,7 @@ button:focus-visible,input:focus-visible,select:focus-visible { outline:2px soli
 
 @media (min-width:640px) {
   .utility-bar { display:grid; grid-template-columns:1fr 1fr 1fr; text-align:left; }
+  .utility-brand-mark { display:none; }
   .utility-copy--center { text-align:center; }.utility-badges { justify-content:flex-end; }
   .catalog-grid { grid-template-columns:repeat(2,1fr); }
   .product-preview__panel { grid-template-columns:1.15fr .85fr; }
@@ -126,6 +129,7 @@ button:focus-visible,input:focus-visible,select:focus-visible { outline:2px soli
 
 @media (min-width:1024px) {
   .utility-bar { padding-inline:14vw; }.circular-mark { display:block; }
+  .utility-brand-mark { display:block; position:absolute; left:3vw; top:50%; transform:translateY(-50%); width:118px; height:88px; }
   .catalog-section { padding-block:95px; }.catalog-grid { grid-template-columns:repeat(3,1fr); gap:82px 38px; }
   .catalog-ticker { margin-inline:-5vw; }
   .lookbook-card__meta b { font-size:1.7rem; }
