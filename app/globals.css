@@ -8,7 +8,7 @@
   --font-body: var(--font-montserrat);
 }
 
-:root { --black:#0a0a0a; --white:#f2f0e9; --red:#d94f2b; --gray:#a6a39b; --line:rgba(242,240,233,.24); }
+:root { --black:#0a0a0a; --white:#f2f0e9; --red:#d94f2b; --gray:#a6a39b; --line:rgba(242,240,233,.24); --font-display:var(--font-montserrat); --font-body:var(--font-montserrat); }
 * { box-sizing:border-box; }
 html { background:var(--black); scroll-behavior:smooth; }
 body { margin:0; background:var(--black); color:var(--white); font-family:var(--font-montserrat),sans-serif; overflow-x:hidden; }
@@ -44,8 +44,8 @@ button:focus-visible,input:focus-visible,select:focus-visible { outline:2px soli
 .poster-hero::after { content:""; position:absolute; inset:0; z-index:-1; background:radial-gradient(circle at center,rgba(10,10,10,.2),#0a0a0a 78%),linear-gradient(180deg,#0a0a0a 0,transparent 20%,transparent 70%,#0a0a0a 100%); }
 .poster-hero__lockup { width:min(100%,1100px); }
 .poster-kicker { font-family:var(--font-display),sans-serif; color:var(--gray); font-size:.65rem; letter-spacing:.25em; }
-.poster-hero h1 { margin:12px 0 0; font:900 clamp(4.1rem,15vw,10.6rem)/.86 var(--font-display),sans-serif; letter-spacing:-.075em; white-space:nowrap; text-shadow:0 8px 35px #000; text-transform:none; }
-.poster-hero h2 { font:900 clamp(2.1rem,7vw,5.7rem)/.9 var(--font-display),sans-serif; margin:22px 0 8px; }
+.poster-hero h1 { margin:12px 0 0; font:900 clamp(4.9rem,18vw,13rem)/.82 var(--font-display),sans-serif; letter-spacing:-.09em; white-space:nowrap; text-shadow:0 8px 35px #000; text-transform:none; }
+.poster-hero h2 { font:900 clamp(2.4rem,7.8vw,6.2rem)/.9 var(--font-display),sans-serif; margin:22px 0 8px; }
 .poster-hero h2 span { color:var(--red); }
 .poster-subline { color:var(--gray); font-weight:700; letter-spacing:.45em; font-size:clamp(.65rem,1.3vw,.9rem); }
 .poster-presenting { margin:38px 0 20px; font-size:.6rem; font-weight:700; letter-spacing:.25em; }
