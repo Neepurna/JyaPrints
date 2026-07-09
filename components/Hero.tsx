@@ -12,8 +12,8 @@ export function Hero() {
     <section className="poster-hero" id="hero">
       <motion.div className="poster-hero__lockup" variants={variants} initial="hidden" animate="visible">
         <motion.p variants={item} className="poster-kicker">जया / JYA STORE</motion.p>
-        <motion.h1 variants={item}>Jya Store</motion.h1>
-        <motion.h2 variants={item}>Wear Your Roots<span>.</span></motion.h2>
+        <motion.h1 variants={item} className="poster-title">Jya Store</motion.h1>
+        <motion.h2 variants={item} className="poster-tagline">Wear Your Roots<span>.</span></motion.h2>
         <motion.p variants={item} className="poster-subline">THE MODERN WAY</motion.p>
         <motion.p variants={item} className="poster-presenting">PRESENTING 12 NEW DESIGNS</motion.p>
         <motion.button variants={item} onClick={() => open()} className="poster-cta">PRE-ORDER THE DROP <ArrowUpRight /></motion.button>
