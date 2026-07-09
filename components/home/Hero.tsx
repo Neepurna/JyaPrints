@@ -35,7 +35,7 @@ export function Hero() {
         <div className="hero-art">
           <Image
             src="/images/hero/campaign-placeholder.png"
-            alt="JYA Prints streetwear campaign model"
+            alt="Jya Store streetwear campaign model"
             fill
             priority
             sizes="(min-width: 1024px) 54vw, 100vw"

@@ -7,7 +7,7 @@ export function TopUtilityBar() {
   return (
     <section className="utility-bar">
       <div className="utility-brand-mark">
-        <Image src="/images/brand/jya-store-logo.png" alt="JYA Store logo" fill sizes="120px" priority />
+        <Image src="/images/brand/jya-store-logo.png" alt="JYA Store logo" fill sizes="110px" priority />
       </div>
       <div className="utility-copy utility-copy--left"><Recycle /><span>STREETWEAR DESIGN<br />VOL. 01 // SEASON 1</span></div>
       <div className="utility-copy utility-copy--center"><b>MYTHOLOGY DESIGN</b><span>ROOTED IN KATHMANDU</span></div>
